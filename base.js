@@ -13,6 +13,7 @@ const items = ['x', 'y', 'z'];
 window.onload = function() {
     items.forEach(item => {
         $(`camera-${item}`).addEventListener('change', cameraValueChange(item));
+        $(`camera-${item}`).value = camera.position[item];
         $(`s-${item}`).innerHTML = camera.position[item];
     })
 }
