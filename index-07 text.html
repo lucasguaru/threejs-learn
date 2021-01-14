@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three 01</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js" integrity="sha512-jeYvJdyAYkpQCY/omvCYQo89qA5YxDW4JBT7COPsHT2sOAanwxkZRFeP9gc69b5reSDpZIoyCqZQZcWZkbB5Gw==" crossorigin="anonymous"></script>
+    <script src="fontJSON.js"></script>
+    <script src="base.js"></script>
+    <style>
+        body, div {
+            margin: 0;
+        }
+        footer {
+            height: 50px;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="scene"></div>
+    <footer>
+        <label for="">x(<span id="s-x"></span>)</label><input id="camera-x" type="range" min="-20" max="20" value=".5">
+        <label for="">y(<span id="s-y"></span>)</label><input id="camera-y" type="range" min="-20" max="20" value=".5">
+        <label for="">z(<span id="s-z"></span>)</label><input id="camera-z" type="range" min="-50" max="50" value="1">
+    </footer>
+</body>
+<script src="index-07 text.js"></script>
+</html>
